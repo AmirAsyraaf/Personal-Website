@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>My Personal Website</title>
+<script type = "text/javascript">
+	function myFunction() {
+  var txt;
+  var r = confirm("Press a button!");
+  if (r == true) 
+  {
+    txt = "You pressed OK!";
+  } 
+	else 
+  {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+ alert("Welcome to my Favourite Song site!")
+ </script>
+<style>
+html { 
+  background: url(https://i.redd.it/laz2jwki5xb41.jpg) no-repeat center fixed; 
+  background-size: cover;
+}
+
+a
+{
+font-family: Verdana, Geneva, sans-serif;
+}
+
+p
+{
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: right;
+    font-size: 18px;
+    color: #000;
+    position: absolute;
+    right: auto;
+    top: 138px;
+    left: 374px;
+    width: 429px;
+    height: 105px;
+}
+
+h2
+{
+	font-family:Verdana, Geneva, sans-serif
+}
+
+div
+{
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: blue;
+
+}
+.header {
+  background-color: blue;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.p {
+	font-family: Verdana, Geneva, sans-serif;
+	color: #000000;
+	-webkit-transition: all 2s ease-in 2s;
+	-moz-transition: all 2s ease-in 2s;
+	-ms-transition: all 2s ease-in 2s;
+	-o-transition: all 2s ease-in 2s;
+	transition: all 2s ease-in 2s;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+#h3 {
+	position: absolute;
+	right: auto;
+	clip: rect(auto,auto,auto,auto);
+}
+#h3 {
+	font-size: 16px;
+}
+</style>
+</head>
+
+<body>
+	
+<div class="header">
+  <h1 align ="center">Favourite Song</h1>
+</div>
+
+
+<p>This webpage features my personal favourite song </p>
+
+<h2></h2>
+<a href="index.html" target="_blank">Home</a>
+
+<h2></h2>
+<a href="Personal Information.html" target="_blank" >Personal Information</a>
+
+<h2></h2>
+<a href="Favourite Videos.html" target="_blank" >Favourite Videos</a>
+
+<h2></h2>
+<a href="Favourite Songs.html" target="_blank" >Favourite Songs</a>
+
+<center>
+<a id="demo"></a>
+	
+<h2>First Song</h2>
+  <div id="player">
+    <audio preload="auto" controls="controls">
+      <source src="Music/Cardfight Vanguard Asia Circuit ending 1.mp3" type="audio/mp3" />
+    </audio>
+  </div>
+<a href="https://www.youtube.com/watch?v=MOUW1k5Qyig" target="_blank" onclick="myFunction()">Cardfight Vanguard - Way to Victory - Music Video</a>
+
+<h2>Second Song </h2>
+  <div id="player">
+    <audio preload="auto" controls="controls">
+      <source src="Music/Cardfight Vanguard Link Joker ending 1.mp3" type="audio/mp3" />
+    </audio>
+  </div>
+<a href="https://www.youtube.com/watch?v=vHbroZQ6UiE" target="_blank" onclick="myFunction()">Cardfight Vanguard - Endless Fighter - Music Video </a>
+
+<h2>Third Song</h2>
+	<div id="player">
+    <audio preload="auto" controls="controls">
+      <source src="Music/Cardfight!! Vanguard - Season 1 Ending 3 - Dream Shooter (English Version - Lyrics On Screen).mp3" type="audio/mp3" />
+    </audio>
+  </div>
+<a href="https://www.youtube.com/watch?v=vHbroZQ6UiE" target="_blank" onclick="myFunction()">Cardfight Vanguard - Dream Shooter Music Video</a>
+</center>
+
+</body>
+</html>
